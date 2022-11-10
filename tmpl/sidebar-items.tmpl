@@ -16,7 +16,13 @@
                 section.items.forEach(function(item) { ?>
                     <div class="sidebar-section-children">
                         <?js= item.anchor ?>
-                    </div>
+
+                        <?js if (item.customTags && item.customTags.length > 0) { ?>
+                            <?js item.customTags.forEach(function(tag) { ?>
+                                <code class="sidebar-section-children-tag"><?js= tag.title ?></code>
+                            <?js }) ?>
+                        <?js } ?>
+                </div>
                     
                 <?js }) ?>
             </div>

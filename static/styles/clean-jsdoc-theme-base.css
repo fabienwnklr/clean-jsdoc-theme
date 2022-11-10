@@ -433,14 +433,31 @@ code {
     overflow: hidden;
 }
 
+.sidebar-section-children {
+    position: relative;
+}
+
 .sidebar-section-children a {
     display: block;
-    width: 100%;
     padding: 0.25rem 2rem;
+    position: relative;
+    width: 100%;
 }
 
 .sidebar-section-children a {
     text-decoration: none;
+}
+
+.sidebar-section-children .sidebar-section-children-tag {
+    display: none;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.with-arrow[data-isopen='true']+.sidebar-section-children-container .sidebar-section-children .sidebar-section-children-tag {
+    display: block;
 }
 
 .with-arrow[data-isopen='false']+.sidebar-section-children-container {

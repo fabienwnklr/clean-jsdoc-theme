@@ -525,6 +525,10 @@ function buildSidebarMembers({
 
     if (items.length) {
         items.forEach(function (item) {
+            if (item.kind === 'typedef') {
+                return;
+            }
+
             const currentItem = {
                 name: item.name,
                 anchor: item.longname
@@ -532,6 +536,10 @@ function buildSidebarMembers({
                     : linktoFn('', item.name),
                 children: []
             };
+
+            if (item.customTags) {
+                currentItem.customTags = item.customTags;
+            }
 
             var methods =
                 sectionName === SECTION_TYPE.Tutorials ||

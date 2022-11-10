@@ -8,6 +8,17 @@ var self = this;
     <?js } ?>
 
     <h3 class="name has-anchor" id="<?js= id ?>">
+        <?js if (data.customTags && data.customTags.length > 0) { ?>
+            <?js data.customTags.forEach(function(tag) { ?>
+                <small>
+                    <?js if (tag.description && tag.description !== '') { ?>
+                        <code data-tooltip="<?js= tag.description ?>"><?js= tag.title ?></code>
+                    <?js } else { ?>
+                        <code><?js= tag.title ?></code>
+                    <?js } ?>
+                </small>
+            <?js }) ?>
+        <?js } ?>
         <?js= data.attribs + (kind === 'class' ? 'new ' : '') + name + (data.signature || '') ?>
     </h3>
 
