@@ -48,6 +48,7 @@
     "fs-extra": "^10.1.0",
     "html-minifier": "^4.0.0",
     "jsdoc-tsimport-plugin": "^1.0.5",
-    "nanoid": "^3.3.4"
+    "nanoid": "^3.3.4",
+    "showdown": "^2.1.0"
   }
 }
