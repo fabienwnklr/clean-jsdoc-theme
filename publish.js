@@ -430,6 +430,12 @@ function buildFooter() {
     return footer;
 }
 
+function moduleHeader() {
+    var displayModuleHeader = themeOpts.displayModuleHeader || false;
+
+    return displayModuleHeader;
+}
+
 function getFavicon() {
     var favicon = themeOpts.favicon || undefined;
 
@@ -968,6 +974,7 @@ exports.publish = function (taffyData, opts, tutorials) {
     view.htmlsafe = htmlsafe;
     view.outputSourceFiles = outputSourceFiles;
     view.footer = buildFooter();
+    view.displayModuleHeader = moduleHeader();
     view.favicon = getFavicon();
     view.dynamicStyle = createDynamicStyleSheet();
     view.dynamicStyleSrc = returnPathOfStyleSrc();
