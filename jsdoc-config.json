@@ -8,6 +8,7 @@
     "plugins": ["plugins/markdown", "node_modules/jsdoc-tsimport-plugin/index.js", "./static/scripts/custom-tags.js"],
     "opts": {
         "encoding": "utf8",
+        "readme": "README.md",
         "destination": "output/v4",
         "recurse": true,
         "template": "./",

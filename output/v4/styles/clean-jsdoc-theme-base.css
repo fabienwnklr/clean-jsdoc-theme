@@ -294,7 +294,7 @@ th,
 td {
     display: table-cell;
     margin: 0;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.3rem;
     text-align: left;
     vertical-align: top;
 }
@@ -611,7 +611,7 @@ code {
 }
 
 .main-wrapper {
-    /* padding: 0 4rem 1rem; */
+    padding: 0 4rem 1rem;
     width: 100%;
 }
 

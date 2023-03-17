@@ -227,21 +227,23 @@ function createAnchorElement(id) {
 function addAnchor() {
     var main = document.querySelector('.main-content').querySelector('section');
 
-    var h1 = main.querySelectorAll('h1');
-    var h2 = main.querySelectorAll('h2');
-    var h3 = main.querySelectorAll('h3');
-    var h4 = main.querySelectorAll('h4');
+    if (main) {
+        var h1 = main.querySelectorAll('h1');
+        var h2 = main.querySelectorAll('h2');
+        var h3 = main.querySelectorAll('h3');
+        var h4 = main.querySelectorAll('h4');
 
-    var targets = [h1, h2, h3, h4];
+        var targets = [h1, h2, h3, h4];
 
-    targets.forEach(function (target) {
-        target.forEach(function (heading) {
-            var anchor = createAnchorElement(heading.id);
+        targets.forEach(function (target) {
+            target.forEach(function (heading) {
+                var anchor = createAnchorElement(heading.id);
 
-            heading.classList.add('has-anchor');
-            heading.append(anchor);
+                heading.classList.add('has-anchor');
+                heading.append(anchor);
+            });
         });
-    });
+    }
 }
 
 /**
