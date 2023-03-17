@@ -99,7 +99,7 @@ p {
 }
 
 article ul {
-    list-style: none;
+    /* list-style: none; */
 }
 
 article ul li,
