@@ -1,19 +1,19 @@
 @font-face {
+    font-display: swap;
     font-family: 'heading';
     src: url('../fonts/WorkSans-Bold.ttf') format('truetype');
-    font-display: swap;
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'body';
     src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
-    font-display: swap;
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'code';
     src: url('../fonts/Inconsolata-Regular.ttf') format('truetype');
-    font-display: swap;
 }
 
 * {
@@ -24,9 +24,9 @@
 
 html,
 body {
+    line-height: 1.75;
     min-height: 100%;
     width: 100%;
-    line-height: 1.75;
 }
 
 body {
@@ -89,6 +89,7 @@ a:hover {
 }
 
 /* badges */
+
 a img {
     margin-right: 0.5rem;
 }
@@ -145,10 +146,10 @@ article ul p {
 }
 
 blockquote {
-    font-size: 0.875rem;
-    padding: 0.0625rem 1.25rem;
     border-radius: 1rem;
+    font-size: 0.875rem;
     margin: 0.5rem 0;
+    padding: 0.0625rem 1.25rem;
 }
 
 .details {
@@ -171,9 +172,9 @@ dt {
 }
 
 .details ul {
-    margin: 0;
     display: inline-flex;
     list-style-type: none;
+    margin: 0;
 }
 
 .details ul li {
@@ -293,7 +294,7 @@ th,
 td {
     display: table-cell;
     margin: 0;
-    padding: 1rem 2rem;
+    padding: 1rem 0.5rem;
     text-align: left;
     vertical-align: top;
 }
@@ -369,7 +370,7 @@ code {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 25rem;
+    width: 20rem;
     z-index: 10;
 }
 
@@ -533,7 +534,7 @@ code {
     position: fixed;
     z-index: 10;
     top: 0;
-    left: 25rem;
+    left: 20rem;
     right: 25rem;
     height: 7rem;
     padding-top: 1rem;
@@ -593,8 +594,8 @@ code {
 }
 
 .font-size-tooltip {
-    display: flex;
     align-items: center;
+    display: flex;
     margin: 0 -0.5rem;
 }
 
@@ -603,19 +604,15 @@ code {
 }
 
 .main-content {
-    position: relative;
-    flex: 1;
-    overflow: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    overflow: auto;
     padding: 7rem 25rem 0;
+    position: relative;
 }
 
 .main-wrapper {
+    /* padding: 0 4rem 1rem; */
     width: 100%;
-    max-width: 60rem;
-    padding: 0 4rem 1rem;
 }
 
 .p-h-n {
@@ -908,7 +905,7 @@ pre {
     }
 
     .main-content {
-        padding: 7rem 0 0 25rem;
+        padding: 7rem 0 0 20rem;
     }
 
     .search-container .wrapper {
@@ -917,7 +914,7 @@ pre {
 
     .navbar-container {
         /* For scrollbar */
-        right: 1rem;
+        right: 0.3125rem;
     }
 }
 

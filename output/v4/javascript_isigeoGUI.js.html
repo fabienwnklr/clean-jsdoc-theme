@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en" style="font-size:16px"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="Author" content="Ankit Kumar"><meta name="Description" content="A beautifully crafted theme for jsdoc"><script src="typedef.js"></script><title>javascript/isigeoGUI.js</title><!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]--><script src="scripts/third-party/hljs.js" defer="defer"></script><script src="scripts/third-party/hljs-line-num.js" defer="defer"></script><script src="scripts/third-party/popper.js" defer="defer"></script><script src="scripts/third-party/tippy.js" defer="defer"></script><script src="scripts/third-party/tocbot.min.js"></script><script>var baseURL="/",locationPathname="",baseURL=(locationPathname=document.location.pathname).substr(0,locationPathname.lastIndexOf("/")+1)</script><link rel="stylesheet" href="styles/clean-jsdoc-theme.min.css"><svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><defs><symbol id="copy-icon" viewbox="0 0 488.3 488.3"><g><path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/><path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/></g></symbol><symbol id="search-icon" viewBox="0 0 512 512"><g><g><path d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z"/></g></g><g><g><path d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"/></g></g></symbol><symbol id="font-size-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11.246 15H4.754l-2 5H.6L7 4h2l6.4 16h-2.154l-2-5zm-.8-2L8 6.885 5.554 13h4.892zM21 12.535V12h2v8h-2v-.535a4 4 0 1 1 0-6.93zM19 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol><symbol id="add-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"/></symbol><symbol id="minus-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h14v2H5z"/></symbol><symbol id="dark-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></symbol><symbol id="light-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></symbol><symbol id="reset-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.537 19.567A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 2.136-.67 4.116-1.81 5.74L17 12h3a8 8 0 1 0-2.46 5.772l.997 1.795z"/></symbol><symbol id="down-icon" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"></path></symbol><symbol id="codepen-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.5 13.202L13 15.535v3.596L19.197 15 16.5 13.202zM14.697 12L12 10.202 9.303 12 12 13.798 14.697 12zM20 10.869L18.303 12 20 13.131V10.87zM19.197 9L13 4.869v3.596l3.5 2.333L19.197 9zM7.5 10.798L11 8.465V4.869L4.803 9 7.5 10.798zM4.803 15L11 19.131v-3.596l-3.5-2.333L4.803 15zM4 13.131L5.697 12 4 10.869v2.262zM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15V9z"/></symbol><symbol id="close-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></symbol><symbol id="menu-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></symbol></defs></svg></head><body class="light" data-theme="light"><div class="sidebar-container"><div class="sidebar" id="sidebar"><a href="/" class="sidebar-title sidebar-title-anchor">clean-jsdoc-theme</a><div class="sidebar-items-container"><div class="sidebar-section-title with-arrow" data-isopen="false" id="c6r7nOiyMCZkypA1nXiMt"><div>Tutorials</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="tutorial-tutoIsigeoLog.html">Utilisation de la fonction isigeoGUI.log</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="Wl3itluFbZox5iSd65Tan"><div>Global</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="global.html#activeLayer">activeLayer</a></div><div class="sidebar-section-children"><a href="global.html#addForm">addForm</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#addLayer">addLayer</a></div><div class="sidebar-section-children"><a href="global.html#addLinked">addLinked</a></div><div class="sidebar-section-children"><a href="global.html#changeApp">changeApp</a></div><div class="sidebar-section-children"><a href="global.html#changeMap">changeMap</a></div><div class="sidebar-section-children"><a href="global.html#exportCSVSelection">exportCSVSelection</a></div><div class="sidebar-section-children"><a href="global.html#exportPng">exportPng</a></div><div class="sidebar-section-children"><a href="global.html#getStrate">getStrate</a></div><div class="sidebar-section-children"><a href="global.html#integrateDXF">integrateDXF</a></div><div class="sidebar-section-children"><a href="global.html#isigeoGUI">isigeoGUI</a></div><div class="sidebar-section-children"><a href="global.html#launchExportSIG">launchExportSIG</a></div><div class="sidebar-section-children"><a href="global.html#launchPHP">launchPHP</a></div><div class="sidebar-section-children"><a href="global.html#launchSQL">launchSQL</a></div><div class="sidebar-section-children"><a href="global.html#log">log</a></div><div class="sidebar-section-children"><a href="global.html#modalAlert">modalAlert</a></div><div class="sidebar-section-children"><a href="global.html#openAccordion">openAccordion</a></div><div class="sidebar-section-children"><a href="global.html#openForm">openForm</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#openIframeDialog">openIframeDialog</a></div><div class="sidebar-section-children"><a href="global.html#openLegend">openLegend</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#openPanel">openPanel</a></div><div class="sidebar-section-children"><a href="global.html#openTB">openTB</a></div><div class="sidebar-section-children"><a href="global.html#printMap">printMap</a></div><div class="sidebar-section-children"><a href="global.html#removeLayer">removeLayer</a></div><div class="sidebar-section-children"><a href="global.html#saveMapAsImg">saveMapAsImg</a></div><div class="sidebar-section-children"><a href="global.html#search">search</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#setToolBar">setToolBar</a></div></div></div></div></div><div class="navbar-container" id="VuAckcnZhf"><nav class="navbar"><div class="navbar-left-items"></div><div class="navbar-right-items"><div class="navbar-right-item"><button class="icon-button search-button" aria-label="open-search"><svg><use xlink:href="#search-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#dark-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div><nav></nav></nav></div><div class="toc-container"><div class="toc-content"><span class="bold">On this page</span><div id="eed4d2a0bfd64539bb9df78095dec881"></div></div></div><div class="body-wrapper"><div class="main-content"><div class="main-wrapper"><section id="source-page" class="source-page"><header><h1 id="title" class="has-anchor">javascript_isigeoGUI.js</h1></header><article><pre class="prettyprint source lang-js"><code>/** Import des types
+    <![endif]--><script src="scripts/third-party/hljs.js" defer="defer"></script><script src="scripts/third-party/hljs-line-num.js" defer="defer"></script><script src="scripts/third-party/popper.js" defer="defer"></script><script src="scripts/third-party/tippy.js" defer="defer"></script><script src="scripts/third-party/tocbot.min.js"></script><script>var baseURL="/",locationPathname="",baseURL=(locationPathname=document.location.pathname).substr(0,locationPathname.lastIndexOf("/")+1)</script><link rel="stylesheet" href="styles/clean-jsdoc-theme.min.css"><svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><defs><symbol id="copy-icon" viewbox="0 0 488.3 488.3"><g><path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/><path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/></g></symbol><symbol id="search-icon" viewBox="0 0 512 512"><g><g><path d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z"/></g></g><g><g><path d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"/></g></g></symbol><symbol id="font-size-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11.246 15H4.754l-2 5H.6L7 4h2l6.4 16h-2.154l-2-5zm-.8-2L8 6.885 5.554 13h4.892zM21 12.535V12h2v8h-2v-.535a4 4 0 1 1 0-6.93zM19 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol><symbol id="add-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"/></symbol><symbol id="minus-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h14v2H5z"/></symbol><symbol id="dark-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></symbol><symbol id="light-theme-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></symbol><symbol id="reset-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.537 19.567A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 2.136-.67 4.116-1.81 5.74L17 12h3a8 8 0 1 0-2.46 5.772l.997 1.795z"/></symbol><symbol id="down-icon" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"></path></symbol><symbol id="codepen-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.5 13.202L13 15.535v3.596L19.197 15 16.5 13.202zM14.697 12L12 10.202 9.303 12 12 13.798 14.697 12zM20 10.869L18.303 12 20 13.131V10.87zM19.197 9L13 4.869v3.596l3.5 2.333L19.197 9zM7.5 10.798L11 8.465V4.869L4.803 9 7.5 10.798zM4.803 15L11 19.131v-3.596l-3.5-2.333L4.803 15zM4 13.131L5.697 12 4 10.869v2.262zM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15V9z"/></symbol><symbol id="close-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></symbol><symbol id="menu-icon" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></symbol></defs></svg></head><body class="light" data-theme="light"><div class="sidebar-container"><div class="sidebar" id="sidebar"><a href="/" class="sidebar-title sidebar-title-anchor">clean-jsdoc-theme</a><div class="sidebar-items-container"><div class="sidebar-section-title with-arrow" data-isopen="false" id="HymaDaN_pLTd_dbdcap0M"><div>Tutorials</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="tutorial-tutoIsigeoLog.html">Utilisation de la fonction isigeoGUI.log</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="iG1zGYyysm5Sd8oINSJwu"><div>Global</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="global.html#activeLayer">activeLayer</a></div><div class="sidebar-section-children"><a href="global.html#addForm">addForm</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#addLayer">addLayer</a></div><div class="sidebar-section-children"><a href="global.html#addLinked">addLinked</a></div><div class="sidebar-section-children"><a href="global.html#changeApp">changeApp</a></div><div class="sidebar-section-children"><a href="global.html#changeMap">changeMap</a></div><div class="sidebar-section-children"><a href="global.html#exportCSVSelection">exportCSVSelection</a></div><div class="sidebar-section-children"><a href="global.html#exportKml">exportKml</a></div><div class="sidebar-section-children"><a href="global.html#exportPng">exportPng</a></div><div class="sidebar-section-children"><a href="global.html#getStrate">getStrate</a></div><div class="sidebar-section-children"><a href="global.html#integrateDXF">integrateDXF</a></div><div class="sidebar-section-children"><a href="global.html#isigeoGUI">isigeoGUI</a></div><div class="sidebar-section-children"><a href="global.html#launchExportSIG">launchExportSIG</a></div><div class="sidebar-section-children"><a href="global.html#launchPHP">launchPHP</a></div><div class="sidebar-section-children"><a href="global.html#launchSQL">launchSQL</a></div><div class="sidebar-section-children"><a href="global.html#log">log</a></div><div class="sidebar-section-children"><a href="global.html#mergeFic">mergeFic</a></div><div class="sidebar-section-children"><a href="global.html#modalAlert">modalAlert</a></div><div class="sidebar-section-children"><a href="global.html#openAccordion">openAccordion</a></div><div class="sidebar-section-children"><a href="global.html#openForm">openForm</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#openIframeDialog">openIframeDialog</a></div><div class="sidebar-section-children"><a href="global.html#openLegend">openLegend</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#openPanel">openPanel</a></div><div class="sidebar-section-children"><a href="global.html#openTB">openTB</a></div><div class="sidebar-section-children"><a href="global.html#printMap">printMap</a></div><div class="sidebar-section-children"><a href="global.html#removeLayer">removeLayer</a></div><div class="sidebar-section-children"><a href="global.html#saveMapAsImg">saveMapAsImg</a></div><div class="sidebar-section-children"><a href="global.html#search">search</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#setToolBar">setToolBar</a></div></div></div></div></div><div class="navbar-container" id="VuAckcnZhf"><nav class="navbar"><div class="navbar-left-items"></div><div class="navbar-right-items"><div class="navbar-right-item"><button class="icon-button search-button" aria-label="open-search"><svg><use xlink:href="#search-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#dark-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div><nav></nav></nav></div><div class="toc-container"><div class="toc-content"><span class="bold">On this page</span><div id="eed4d2a0bfd64539bb9df78095dec881"></div></div></div><div class="body-wrapper"><div class="main-content"><div class="main-wrapper"><section id="source-page" class="source-page"><header><h1 id="title" class="has-anchor">javascript_isigeoGUI.js</h1></header><article><pre class="prettyprint source lang-js"><code>/** Import des types
  * @type {import('../types/isigeo.d')}
  * @type {import('../types/layoutManager.d')}
  * */
@@ -27,7 +27,7 @@
  */
 
 var isigeoGUI = (function () {
-	//Active le mode strict du compilateur JS du navigateur si compatible(permet de remonter plus d'avertissements très utiles sur le code JS)
+	//Active le mode strict du compilateur JS du navigateur si compatible (permet de remonter plus d'avertissements très utiles sur le code JS)
 	'use strict';
 
 	/* URL du fichier php pour les requêtes XHR */
@@ -42,135 +42,108 @@ var isigeoGUI = (function () {
 	 * Attribut &amp; Méthode Public
 	 */
 	return {
+		/* Contient le numéro de version IsiGéo majeur (6 ou 4)*/
 		version: '6',
-		situ: null,
+		/* Contient l'URL du domaine si l'on souhaite la surcoucher (utilisé pour le checkSession) */
 		domainUrl: '',
+		/* Contient le username de l'utilisateur connecté (utilisé pour la reconnexion via iframe si perte de session) */
 		user: null,
+		/* Contient l'URL vers la console d'administration */
 		adminURL: '',
-		backgroundMode: false,
+		/* Contient les références des requêtes XHR lancées via la fonction launchSQL */
 		launchRequest: [],
+		/* Contient le nombre d'objets à afficher par page (utilisé pour l'inforap, DATA,..) */
 		nbpp: 15,
+		/* Contient le nombre par défaut d'objets à afficher par page */
 		defaultNbpp: 15,
-		windowManager: null,
+		/* Contient la liste des objets décrivant la sélection en cours */
 		objSelection: null,
+		/* Contient la liste des tables qui sont igorées de la sélection */
 		tablesIgnored: [],
+		/* Booleen indiquant si la sélection en cours contient de nouveaux objets */
 		selectionHasNewValues: true,
-		_$$isigeoGUI: _isigeoGUI,
-
-		/* Va contenir le status de l'utilisateur */
-		nature: null,
-
-		//Contient $_SESSION du PHP
+		/* Contient le $_SESSION du PHP */
 		session: null,
-
+		/* Contient l'URL absolu compléte du domaine IsiGéo (avec alias) */
 		root: '',
-
-		//Options du profile
-		options: {},
+		/* Contient le format du device actuellement utilisé (smartphone / desktop) */
 		hardwareFormat: null,
+		/* Booléen indiquant si l'utilisateur est sur un device de type "iPhone" */
 		isIPhone: false,
+		/* Booléen indiquant si l'utilisateur est connecté à internet ou non */
 		offline: null,
-		enabled: false, //Si isigeo est activé
-
-		//Onglet
-		tab: null, //Tableaux des onglets
-		currentTabName: null, //Nom de notre onglet courant
-		currentTab: 0, //indice de notre onglet courant
-
+		/* Booléen indiquant si IsiGéo est activé (actif une fois que tous les chargements sont finis) */
+		enabled: false, 
+		/* Contient l'objet de l'onglet en cours de chargement */
+		tab: null, 
+		/* Contient le nom de l'onglet en cours de chargement (deprecated) */
+		currentTabName: null,
+		/* Contient l'indice de l'onglet en cours de chargement (deprecated) */
+		currentTab: 0, 
+		/* Contient le nom du mcd courant */
 		mcd: null,
+		/* Contient la commande inline paramétrée pour lancer un locate au chargement */
 		inlineLocate: null,
+		/* Contient le nom du domaine courant */
 		domain: null,
-
+		/* Contient la référence de l'objet du sidebar */
 		accordionSlidebar: null,
+		/* Contient l'objet modal bootstrap utilisé pour les modal de chargement */
 		modalWaiting: null,
+		/* Contient l'objet modal bootstrap utilisé pour la modal "Profil utilisateur" */
 		modalUserProfil: null,
+		/* Contient l'objet modal bootstrap utilisé pour la modal "A propos" */
 		modalAbout: null,
+		modalExportKML: null,
+		/* Booléen indiquant si le calcul d'itinéraire est activé */
 		routingEnabled: false,
+		/* Contient la valeur du sous-titre utilisé pour un résultat Nominatim (deprecated) */
 		localiseSubtitle: false,
+		/* Contient la liste des paramètres additionnels utilisé pour l'initialisation d'isigeoGUI' */
 		paramInit: null,
+		/* Booléen indiquant si le device est tactile (utilisé pour la conversion d'event "onclick" en "ontouchend") */
 		tactil: false,
+		/* Contient le status de l'utilisateur (UTIL / EXPERT / WEB / ADMIN) */
+		nature: null,
+		/* Contient le status de l'utilisateur (UTIL / EXPERT / WEB / ADMIN) => DOUBLON */
 		statut: 'UTIL',
+		/* Contient la liste des options du layout paramètrees pour l'utilisateur (utilisé ensuite dans layoutManager.js) */
 		layoutOptions: null,
+		/* Contient la référence de l'event drag and drop d'un objet inforap dans l'Agenda (pour associer un objet à une intervention) */
 		draggableEvent: null,
-		/* Va contenir toutes le ajax afin de pouvoir les abort() facilement */
+		/* Contient la référence de toutes les requetes XHR executées par isigeoGUI.js */
 		activeRequest: [],
-
+		/* Contient la liste de tous les thèmes disponibles */
 		themesAvailable: [],
-
+		/* Contient l'HTML de la ZL d'internationalisation (liste des langues disponibles pour traduire IsiGéo) */
 		i18nZL: '',
+		/* ?? */
 		legend: '',
+		/* Contient l'abréviation de la langue actuellement utilisée (ex : fr_FR, en_EN) */
 		lang: '',
-		arrCodeLang: {},
+		/* ID HTML par défaut utilisé pour la création d'un spinner via la fonction isigeoGUI.spinner */
 		idSpinner: 'spinner',
+		/* Nombre de résultats total de l'inforap courant (utilisé pour isigeoGUI.getInforapContent) */
 		nbResult: 0,
+		/* Booléen indiquant si la page vient d'être rechargée ou non */
 		pageWasRefreshed: false,
-		//Backup du list de DATA si onglet ouvert non ouvert depuis le debut de la session et accès au requeteur
+		/* Contient la list des tables disponibles sous DATA (utilisé ici si onglet ouvert non ouvert depuis le debut de la session et accès via le requeteur) */
 		dataList: null,
+		/* Contient l'URL redirigeant vers la matrice cadastrale */
 		matcadURL: null,
+		/* Option de dépanne utilisé côté metier, permet de définir une commande JS au niveau du mcd qui s'éxécute en boucle jusqu'au changement de carte ou déconnexion */
 		refreshInterval: null,
-
-		// Constante
+		/* Constantes de LOG utilisées pour définir le niveau d'erreur */
 		ERROR: 1,
 		WARNING: 2,
 		NOTICE: 3,
 		INFO: 4,
-
+		/* Contient la liste des tailles d'écritures disponibles pour agrandir le texte d'IsiGéo (sélectionnable via la modal "Profil utilisateur") */
 		fontSizeArray: ['80%', '90%', '100%', '110%', '125%', '150%'],
+		/* Contient l'index de la taille d'écriture courante */
 		currentIndexFont: 2,
 
-		/*init : function(param){
-			console.log('Initialisation IsiGéo');
-
-			$jq('#panel').append('&lt;div id="viewer">&lt;/div>');
-			$jq('#panel').append('&lt;div id="overlay">&lt;/div>');
-
-			var projection = ol.proj.get('EPSG:3857');
-
-			//Create a view
-			var view = new ol.View({
-				center: [0, 0],
-				projection: projection,
-				extent: projection.getExtent(),
-				zoom: 2
-			});
-
-			//Create the map with layer, controleur and view
-			var map = new ol.Map({
-				layers: [
-					new ol.layer.Tile({
-					  source: new ol.source.OSM()
-					})
-				],
-				target: 'viewer',
-				controls: ol.control.defaults({
-					attributionOptions: ({
-						collapsible: false
-					})
-				}),
-				view: view
-			});
-
-			//-----
-			//Register an event handler for the click event on the map
-			var overlay = new ol.Overlay({
-				element: document.getElementById('overlay'),
-				positioning: 'bottom-center'
-			});
-			//And add it to the map
-			map.addOverlay(overlay);
-		    
-
-			map.on('click', function(event) {
-					//Extract the spatial coordinate of the click event in map projection units
-				var coord = event.coordinate;
-				//Update the overlay element's content
-				var element = overlay.getElement();
-				// Initialisation de l'inforap
-				inforapGUI.init("INPUT_COORD="+coord,element,overlay,event);
-
-			});
-
-		},*/
+		js_files : {},
 
 		bindPostMessage: function () {
 			var handleMessage = function (evt) {
@@ -224,6 +197,7 @@ var isigeoGUI = (function () {
 		 * @ignore
 		 */
 		selectObjects: function (layer, field, id, options) {
+			const { id: idTable } = isigeoSession.getDefTable(layer);
 			// masque la fiche:
 			MapCMD.setState('QUERY_SEL');
 			layoutManager.dialog.hide();
@@ -243,9 +217,9 @@ var isigeoGUI = (function () {
 						idSelector = document.forms.main.idpere.value;
 					}
 					if ($jq('.inforap-title').length > 1) {
-						prefixeSelector = '#container_' + layer + '_' + id;
+						prefixeSelector = '#container_' + idTable + '_' + id;
 					} else {
-						prefixeSelector = '#' + layer + '_' + idSelector;
+						prefixeSelector = '#' + idTable + '_' + idSelector;
 					}
 				}
 				values = $jq.parseJSON($jq(prefixeSelector + ' input[name=' + field + ']').attr('data'));
@@ -335,6 +309,7 @@ var isigeoGUI = (function () {
 		 * @ignore
 		 **/
 		locateObjects: function (layer, field, id) {
+			const { id: idTable } = isigeoSession.getDefTable(layer);
 			// masque la fiche:
 			//layoutManager.dialog.hide();
 			//  bascule sur la carte
@@ -351,9 +326,9 @@ var isigeoGUI = (function () {
 					idSelector = document.forms.main.idpere.value;
 				}
 				if ($jq('.inforap-title').length > 1) {
-					prefixeSelector = '#container_' + layer + '_' + id;
+					prefixeSelector = '#container_' + idTable + '_' + id;
 				} else {
-					prefixeSelector = '#' + layer + '_' + idSelector;
+					prefixeSelector = '#' + idTable + '_' + idSelector;
 				}
 			}
 			var values = [];
@@ -753,7 +728,7 @@ var isigeoGUI = (function () {
 						},
 					];
 
-					if (typeof jsonUserProfil.status !== undefined &amp;&amp; jsonUserProfil.status == false) {
+					if (typeof jsonUserProfil.status !== "undefined" &amp;&amp; jsonUserProfil.status == false) {
 						var userPage = `
 						&lt;div class="container-fluid">
 							&lt;div class="row">
@@ -850,7 +825,7 @@ var isigeoGUI = (function () {
 									isigeoGUI.jsonToForm(jsonUserProfil);
 
 									// Si on à l'objet en storage c'est qu'on est en dark mode
-									if (localStorage.getItem('theme') !== null &amp;&amp; localStorage.getItem('isDarkMode') === 'true') {
+									if (localStorage.getItem('isigeo-theme') !== null &amp;&amp; localStorage.getItem('isDarkMode') === 'true') {
 										$jq('#darkOrLight').attr('checked', true);
 									}
 
@@ -908,7 +883,7 @@ var isigeoGUI = (function () {
 				event.preventDefault();
 			}
 
-			const url = 'csv.php?layerref=' + table + '&amp;session=ficCSV&amp;format=csv';
+			const url = `csv.php?layerref=${table}&amp;session=ficCSV&amp;format=csv&amp;colToExclude=${DataGUI.colToExclude}`;
 			document.location.href = url;
 		},
 
@@ -918,6 +893,7 @@ var isigeoGUI = (function () {
 		 * @param {String!} table Nom de la table
 		 * @param {String=} whereSQL Clause SQL WHERE
 		 * @param {Number=} limit limite de la requête
+		 * @param {Boolean=} [exportPublipostage=false] limite de la requête
 		 *
 		 * @example
 		 * isigeoGUI.exportCSVSelection('support', 'id_support = 1', 10);
@@ -985,7 +961,7 @@ var isigeoGUI = (function () {
 		 * @externe Appelable depuis Isigeo_API
 		 *
 		 * @param {String!} tableId Nom ou identitiant de la table
-		 * @param {AddFormOpts=} options Objet d'options
+		 * @param {AddFormOpts=} [options={}] Objet d'options
 		 *
 		 * @example
 		 * isigeoGUI.addForm('support', {
@@ -993,12 +969,14 @@ var isigeoGUI = (function () {
 		 *       "monChamp": "maValeur"
 		 *     },
 		 *     gps: true,
+		 *     activeLayer: false,
 		 *     forceAlpha: true,
 		 *     accordionDraw: 'hide',
 		 *     hideForm: false,
 		 *     hideDialog: false,
 		 *     callbackSave: () => console.log('test'),
 		 *     notif: { text: 'Hey', type: 'success', duration: 1000}
+		 *     addLinked: { linkedField: 'dpv_dispo_numdossier', getLastLinkedField: true, getFilsLastLinkedField: true }
 		 * })
 		 *
 		 */
@@ -1112,6 +1090,9 @@ var isigeoGUI = (function () {
 							}
 
 							var launchAdd = function (serverResponse, options) {
+								if(layoutManager.isFormDep()){
+									$jq('#spinner').hide();
+								}
 								if (options.gps == 'insert') {
 									options.forceAlpha = true;
 								}
@@ -1170,14 +1151,17 @@ var isigeoGUI = (function () {
 													Dessin.hideFiche = options.hideForm;
 													Dessin.affichage = affichage;
 													Dessin.libelleTable = libelleTable;
-													try {
-														Viewer.activeLayer([
-															{
-																name: layerName,
-																status: 'ON',
-															},
-														]);
-													} catch (e) {}
+
+													if (options.activeLayer) {
+														try {
+															Viewer.activeLayer([
+																{
+																	name: layerName,
+																	status: 'ON',
+																},
+															]);
+														} catch (e) {}
+													}
 												};
 												if (options.accordionDraw == 'hide') {
 													Dessin.switchAccordion = false;
@@ -1191,7 +1175,7 @@ var isigeoGUI = (function () {
 										};
 
 										if (typeof layoutManager.isJSGroupLoaded.viewer == 'undefined' || !layoutManager.isJSGroupLoaded.viewer) {
-											layoutManager.loadJSFile('viewer', 0, isigeoGUI.js_files.isigeo_viewer.length, function () {
+											layoutManager.loadJSFile('viewer',function () {
 												afterCheckJSLoaded(layerName, options, result, state);
 											});
 										} else {
@@ -1431,6 +1415,10 @@ var isigeoGUI = (function () {
 					}
 				}
 			}
+
+			if (typeof options.activeLayer === 'undefined') {
+				options.activeLayer = true;
+			}
 			//Chargement des fichiers JS Form si ni viewer ou data de chargé (car ils contiennent deja les fichiers form)
 			if (
 				typeof layoutManager.isJSGroupLoaded.data == 'undefined' &amp;&amp;
@@ -1443,9 +1431,9 @@ var isigeoGUI = (function () {
 					typeof layoutManager.isJSGroupLoaded.viewer == 'undefined' &amp;&amp;
 					typeof layoutManager.isJSGroupLoaded.data == 'undefined'
 				) {
-					layoutManager.loadJSFile('form', 0, isigeoGUI.js_files.isigeo_form.length, afterJSFormLoaded);
+					layoutManager.loadJSFile('form', afterJSFormLoaded);
 				} else {
-					layoutManager.loadJSFile('form_consult', 0, isigeoGUI.js_files.isigeo_form_consult.length, afterJSFormLoaded);
+					layoutManager.loadJSFile('form_consult', afterJSFormLoaded);
 				}
 			} else {
 				afterJSFormLoaded();
@@ -1471,13 +1459,13 @@ var isigeoGUI = (function () {
 		 * Permet d'ouvrir une fiche
 		 * @externe Appelable depuis Isigeo_API
 		 *
-		 * @param {string!} tableId  Nom de la table
-		 * @param {Number!} id  ID de la table
-		 * @param {OpenFormOpts=} options  Objet d'options
+		 * @param {string!} table  Nom de la table
+		 * @param {Number!} id id du formulaire
+		 * @param {OpenFormOpts=} [options={}]  Objet d'options
 		 * @param {Event=} e Evenement JS
 		 *
 		 * @example
-		 * isigeoGUI.openForm('support', 12 {
+		 * isigeoGUI.openForm('support', 12, {
 		 *   affichage: 'small',
 		 *   edit: true,
 		 *   valid: true,
@@ -1491,15 +1479,27 @@ var isigeoGUI = (function () {
 		 *   notif: { text: 'Hey', type: 'success', duration: 1000}
 		 * })
 		 */
-		openForm: function (tableId, id, options, e) {
-			//if(typeof e != "undefined" &amp;&amp; $jq(e.target).is('td:first-child') &amp;&amp; e.offsetX >= 8 &amp;&amp; e.offsetX &lt;= 19 &amp;&amp; e.offsetY >= 12 &amp;&amp; e.offsetY &lt;= 25){
+		openForm: function (table, id, options, e) {
 			if (typeof e != 'undefined') {
-				if ($jq(e.target).is('td:first-child')) {
+				// Gestion d'une ouverture de lightview depuis l'onglet données
+				if (
+					e.target &amp;&amp; e.target.classList.contains('lightview') ||
+					e.target.parentElement &amp;&amp; e.target.parentElement.classList.contains('lightview')
+				) {
 					return;
 				} else {
 					e.preventDefault();
 					e.stopPropagation();
 				}
+			}
+
+			if (typeof table === 'undefined') {
+				layoutManager.modalAlert("Erreur: Vous devez renseigner l'identifiant ou le nom d'une couche dans la fonction addForm");
+				return;
+			}
+			if (typeof id === 'undefined') {
+				layoutManager.modalAlert("Erreur: Vous devez renseigner l'identifiant unique du formulaire dans la fonction addForm");
+				return;
 			}
 
 			if (typeof options == 'string') {
@@ -1515,10 +1515,16 @@ var isigeoGUI = (function () {
 				options = {};
 			}
 
-			const idForm = `${tableId}_${id}`;
+			// On passe un pipe || table dans le cas ou on l'objet n'existerais pas ou n'aurait pas de prop "id"
+			const idTable = isigeoSession.getDefTable(table).id || table;
+			const iduniqueForm = options.idpere ? options.idpere : id;
+			const idForm = `${idTable}_${iduniqueForm}`;
 
-			var afterJSFormLoaded = function () {
-				var afterLastDialogClosed = function () {
+			const afterJSFormLoaded = function () {
+				const afterLastDialogClosed = function () {
+					if(layoutManager.isFormDep()){
+						$jq('#spinner').hide();
+					}
 					if (options.affichage === 'panel') {
 						const btnForm = `
 								&lt;button id="btn-form" class="btn btn-outline-secondary ml-1">
@@ -1531,7 +1537,7 @@ var isigeoGUI = (function () {
 						$jq('#btn-form')
 							.off('click')
 							.on('click', () => {
-								isigeoGUI.openForm(tableId, id, options, e);
+								isigeoGUI.openForm(table, id, options, e);
 							});
 
 						if (!layoutManager.isModuleVisible('form') &amp;&amp; $jq('#container_' + idForm).length !== 1) {
@@ -1542,14 +1548,14 @@ var isigeoGUI = (function () {
 						} else {
 							if (!Query.formModif[idForm] || Query.formModif[idForm].dataForm === $jq('#form #fiche_metier').serialize()) {
 								Query.startLoader('#form_content');
-								$jq('#form').data('table', tableId);
+								$jq('#form').data('table', table);
 								$jq('#form').data('idunique', id);
 							} else {
 								const ignore = () => {
 									delete Query.formModif[idForm];
 									delete Query.editor[idForm];
 
-									return isigeoGUI.openForm(tableId, id, options);
+									return isigeoGUI.openForm(table, id, options);
 								};
 								layoutManager.dialogConfirm('', { onAccept: Query.onDeniedUpdateObj, onDenied: ignore });
 								return;
@@ -1592,38 +1598,14 @@ var isigeoGUI = (function () {
 								break;
 						}
 					} catch (e) {
-						layoutManager.manageCatchError(e, 'openForm');
+						layoutManager.manageCatchError(e, 'isigeoGUI.openForm');
 						console.error(e);
 					}
 				};
 
-				var table = '';
-				if (typeof tableId == 'number') {
-					// Recupere le nom de la table à partir de l'identifiant unique
-					$jq.ajax({
-						url: file,
-						type: 'POST',
-						data: 'cmd=getLayerName&amp;tableId=' + tableId,
-						async: false,
-						success: function (serverResponse) {
-							var part = checkAjaxStatus('~', serverResponse, this);
-
-							if (!part) {
-								return false;
-							}
-
-							if (serverResponse.split('~')[0] != '') {
-								layoutManager.modalAlert("l'identifiant de la couche est invalide.");
-								return;
-							}
-							table = serverResponse.split('~')[1];
-						},
-					});
-				} else if (typeof tableId == 'string') {
-					table = tableId;
-				} else {
-					layoutManager.modalAlert("Erreur: Vous devez renseigner l'identifiant ou le nom d'une couche dans la fonction addForm");
-					return;
+				// Recupere le nom de la table à partir de l'identifiant unique
+				if (typeof table == 'number') {
+					table = isigeoSession.getDeftableWhere('id', table)[0].nom
 				}
 
 				// PARAMETRE "modif" => **DEPRECATED**
@@ -1656,7 +1638,7 @@ var isigeoGUI = (function () {
 				if (typeof options.useLastDialog != 'undefined' &amp;&amp; options.useLastDialog &amp;&amp; typeof layoutManager.dialog != 'undefined' &amp;&amp; layoutManager.dialog.id != '') {
 					options.id = layoutManager.dialog.id;
 				} else {
-					options.id = table + '_' + id;
+					options.id = idForm;
 				}
 
 				options.table = table;
@@ -1673,7 +1655,7 @@ var isigeoGUI = (function () {
 				typeof layoutManager.isJSGroupLoaded.viewer == 'undefined' &amp;&amp;
 				typeof layoutManager.isJSGroupLoaded.form == 'undefined'
 			) {
-				layoutManager.loadJSFile('form', 0, isigeoGUI.js_files.isigeo_form.length, afterJSFormLoaded);
+				layoutManager.loadJSFile('form', afterJSFormLoaded);
 			} else {
 				afterJSFormLoaded();
 			}
@@ -1783,9 +1765,9 @@ var isigeoGUI = (function () {
 					typeof layoutManager.isJSGroupLoaded.viewer == 'undefined' &amp;&amp;
 					typeof layoutManager.isJSGroupLoaded.data == 'undefined'
 				) {
-					layoutManager.loadJSFile('form', 0, isigeoGUI.js_files.isigeo_form.length, afterJSFormLoaded);
+					layoutManager.loadJSFile('form',afterJSFormLoaded);
 				} else {
-					layoutManager.loadJSFile('form_consult', 0, isigeoGUI.js_files.isigeo_form_consult.length, afterJSFormLoaded);
+					layoutManager.loadJSFile('form_consult', afterJSFormLoaded);
 				}
 			} else {
 				afterJSFormLoaded();
@@ -1795,10 +1777,10 @@ var isigeoGUI = (function () {
 		/**
 		 * Fonction générique pour le lancement des traitements spécifiques ou autre PHP
 		 * @param {String!} cmdAjax Commande du traitement (Juste pour reperer l'ajax dans le tableau, mettre un seul 1 mot)
-		 * @param {String=} path Chemin du fichier PHP avec les param de la requete
-		 * @param {String=} message_title Message de l'alert confirmation, si a false pour de dialog confirm
-		 * @param {String=} message_execute Message envoyé lors du lancement de l'ajax
-		 * @param {String=} message_wait Message si ajax déjà en cours
+		 * @param {String!} path Chemin du fichier PHP avec les param de la requete
+		 * @param {String=} [message_title='Etes-vous sur de vouloir faire cette action ?'] Message de l'alert confirmation, si a false pour de dialog confirm
+		 * @param {String=} [message_execute='Veuillez patientez&lt;br/>Votre action est en cours'] Message envoyé lors du lancement de l'ajax
+		 * @param {String=} [message_wait="L'action est déjà en cours"] Message si ajax déjà en cours
 		 * @param {Bool=} disableFormCheck Désactivation de la validation de formulaire (serialize)
 		 * @param {Bool=} disableAlertifyError Désactivation des alertify d'erreur lorsque le retour PHP ne renvoie rien
 		 * @param {String=} message_details - message complémentaire
@@ -1831,9 +1813,9 @@ var isigeoGUI = (function () {
 		 * @param {String!} cmdAjax Commande du traitement (Juste pour reperer l'ajax dans le tableau, mettre un seul 1 mot)
 		 * @param {String} base Nom de la base de données ciblée
 		 * @param {String} fonction Fonction à executer
-		 * @param {String=} message_title Message de l'alert confirmation, si a false pour de dialog confirm
-		 * @param {String=} message_execute Message envoyé lors du lancement de l'ajax
-		 * @param {String=} message_wait Message si ajax déjà en cours
+		 * @param {String=} [message_title='Etes-vous sur de vouloir faire cette action ?'] Message de l'alert confirmation, si a false pour de dialog confirm
+		 * @param {String=} [message_execute='Veuillez patientez&lt;br/>Votre action est en cours'] Message envoyé lors du lancement de l'ajax
+		 * @param {String=} [message_wait="L'action est déjà en cours"] Message si ajax déjà en cours
 		 * @param {Bool=} disableFormCheck Désactivation de la validation de formulaire (serialize)
 		 * @param {Bool=} disableAlertifyError Désactivation des alertify d'erreur lorsque le retour PHP ne renvoie rien
 		 * @param {String=} message_details - message complémentaire
@@ -2113,39 +2095,48 @@ var isigeoGUI = (function () {
 		 *   cmd: 'construct',
 		 *   exportStatus: 'extranet',
 		 *   outsideTabBord: true
+		 *   destination : {layer : 'support', id : '45',  field : 'fichier', filename : 'mon_fichier.csv'}
 		 * })
 		 */
-		launchExportSIG: function (id, options) {
-			if (typeof options !== 'object') {
-				options = {
-					cmd: 'construct',
-					exportStatus: 'extranet',
-					outsideTabBord: true,
-				};
-			}
-			if (typeof tableau_bordGUI === 'undefined') {
-				$jq.ajax({
-					type: 'GET',
-					url: 'plugins/tableau_bord/javascript/tableau_bordGUI.js',
-					success: function (res) {
-						var part = checkAjaxStatus('~', res, this);
-
-						if (!part) {
-							return false;
-						}
-
-						tableau_bordGUI.launchExportSIG(options.cmd, options.exportStatus, id);
-					},
-					error: function (error) {
-						console.log(error);
-					},
-					dataType: 'script',
-					cache: false,
-				});
-			} else {
-				tableau_bordGUI.launchExportSIG(options.cmd, options.exportStatus, id);
-			}
-		},
+		 launchExportSIG: function (id, options) {
+			 if (typeof options !== 'object') {
+				 options = {
+					 cmd: 'construct',
+					 exportStatus: 'extranet',
+					 outsideTabBord: true,
+				 };
+			 }
+ 
+			 var format = typeof options.format == 'undefined' ? null : options.format;
+			 var filtre = typeof options.filtre == 'undefined' ? null : options.filtre;
+			 var destination = typeof options.destination == 'undefined' ? null : options.destination;
+ 
+			 // Gestion des paramètre par défaut : 
+ 
+ 
+			 if (typeof tableau_bordGUI === 'undefined') {
+				 $jq.ajax({
+					 type: 'GET',
+					 url: 'plugins/tableau_bord/javascript/tableau_bordGUI.js',
+					 success: function (res) {
+						 var part = checkAjaxStatus('~', res, this);
+ 
+						 if (!part) {
+							 return false;
+						 }
+ 
+						 tableau_bordGUI.launchExportSIG(options.cmd, options.exportStatus, id,format, filtre, destination);
+					 },
+					 error: function (error) {
+						 console.log(error);
+					 },
+					 dataType: 'script',
+					 cache: false,
+				 });
+			 } else {
+				 tableau_bordGUI.launchExportSIG(options.cmd, options.exportStatus, id,format, filtre, destination);
+			 }
+		 },
 
 		/**
 		 * Permet d'ajouter un layer
@@ -2155,6 +2146,8 @@ var isigeoGUI = (function () {
 		 * @param  {string=}  options.type Type de la couche (line, point, polygon)
 		 * @param  {string=}  options.url Url GEOJson
 		 * @param  {string=}  options.format format du layer
+		 * @param  {string=}  options.srid code de projection (auto par défaut)
+		 * @param  {string=}  options.zoomToExtent zoom sur la carte (true par défaut)
 		 *
 		 * @example
 		 * isigeoGUI.addLayer('test', {url: 'http://localhost/test.geojson', format: 'geojson'})
@@ -2172,6 +2165,10 @@ var isigeoGUI = (function () {
 				(typeof options.type == 'undefined' || options.type == '')
 			) {
 				options.type = 'point/line/polygon';
+			}
+			
+			if(typeof options.zoomToExtent == 'undefined' || options.zoomToExtent != false){
+				options.zoomToExtent = true;
 			}
 
 			// Envoyer une ajax
@@ -2243,10 +2240,12 @@ var isigeoGUI = (function () {
 										extent = Viewer.maxExtent;
 									}
 									try {
-										Viewer.map.getView().fit(extent, {
-											nearest: true,
-											padding: [200, 200, 200, 200],
-										});
+										if(options.zoomToExtent == true) {
+											Viewer.map.getView().fit(extent, {
+												nearest: true,
+												padding: [200, 200, 200, 200],
+											});
+										}
 									} catch (e) {}
 								}
 							}
@@ -2304,6 +2303,10 @@ var isigeoGUI = (function () {
 							duration: 4000,
 							alert: 'infos',
 						});
+
+						if(!$jq('#viewer').is(':visible')) {
+							layoutManager.openPanel('viewer');
+						}
 					} else {
 						//On affiche un message d'info dans le footer
 						content = 'La couche ' + name + " est déjà présente ou n'existe pas";
@@ -2322,7 +2325,7 @@ var isigeoGUI = (function () {
 
 		/**
 		 * Permet de supprimer un layer
-		 * @param {String} name Nom du layer
+		 * @param {String!} name Nom du layer
 		 */
 		removeLayer: function (name) {
 			var param = 'cmd=removeLayer&amp;layerName=' + name;
@@ -2699,6 +2702,8 @@ var isigeoGUI = (function () {
 		 * @ignore
 		 */
 		getBtnInforapLine: function (deftable, eventApply, values, isSelection, openFiche, callbackModify) {
+			const speedAddBtn = this.getBtnSpeedAdd(deftable, eventApply, values);
+
 			var ret = '&lt;span class="col-auto p-0">';
 			// if(typeof data[keys[i]].icon != 'undefined' &amp;&amp; data[keys[i]].icon != ''){
 			// 	ret  += '&lt;img class="position-relative" style="width:26px;" title="'+data[keys[i]].libelle+'" src="'+data[keys[i]].icon+'" alt="icon">';
@@ -2731,7 +2736,7 @@ var isigeoGUI = (function () {
 					ret += '&lt;span class="icon icon-print ico-h2">&lt;/span>&lt;/button>';
 				} else {
 					ret += '&lt;button type="button" class="btn text-primary p-0 d-inline-flex" title="Générer le document" on' + eventApply + '=';
-					ret += `"getPDF('merge', 'consult', '${values.nomid}', '${values.IDGEO}', '${deftable.nom}', '${values.id}' , '${sessionId}' , '')">`;
+					ret += `"getPDF('merge', 'consult', '${values.idDocs}', '${values.fieldocs}', '${deftable.nom}', '${values.id}' , '${sessionId}' , '')">`;
 					ret += '&lt;span class="icon icon-print ico-h2">&lt;/span>&lt;/button>';
 				}
 			}
@@ -2772,10 +2777,8 @@ var isigeoGUI = (function () {
 			// if (typeof values.affichage_rapide != "undefined" &amp;&amp; values.affichage_rapide) {
 			// 	ret += '&lt;button type="button" data-toggle="collapse" aria-expanded="false" data-idunique="' + values.id + '" data-target="#inforap_' + deftable.nom + '_' + values.id + '" class="btn text-primary d-inline-flex p-0" title="Fiche détaillée de l\'objet" on' + eventApply + '="inforapGUI.displayInforapFields(this, event)">&lt;span class="rotate-arrow right-down d-inline-flex">&lt;i class="icon icon-chevron ico-h2">&lt;/i>&lt;/span>&lt;/button>';
 			// }
-			if (values.speed_add) {
-				ret += `&lt;button type="button" class="btn text-primary p-0 d-inline-flex" on${eventApply}="event.stopPropagation();${values.speed_add.onclick}" title="${values.speed_add.title}">
-					&lt;i class="icon icon-actions-page-new ico-h2">&lt;/i>
-				&lt;/button>`;
+			if (speedAddBtn) {
+				ret += speedAddBtn;
 			}
 			if (openFiche) {
 				let titleDialog = deftable.libelle;
@@ -3036,6 +3039,41 @@ var isigeoGUI = (function () {
 		},
 
 		/**
+		 * @param {Deftable} deftable
+		 * @param {String} eventApply
+		 * @param {object} values
+		 * @return {String|Boolean}
+		 * 
+		 * @ignore
+		 */
+		getBtnSpeedAdd(defTable, eventApply, values) {
+			const { level, nom } = defTable;
+			const { id, libelle } = values;
+
+			if (level === '1') {
+				// On récupéère les enfants
+				const childs = isigeoSession.getDeftableWhere('pere', nom);
+
+				if (childs.length > 0) {
+					// On récupère maintenant les enfants avec speed_add à 'Y' + droit en ajout
+					const speedAdd = childs.filter(child => child.speed_add === 'Y' &amp;&amp; isigeoSession.haveRight(child.nom, isigeoSession.CREATE));
+					
+					if (speedAdd.length > 0) {
+						const tablesNames = childs.map(child => child.nom);
+						const tablesLibelle = childs.map(child => child.libelle);
+						const title = `Ajouter une fiche liée à ${nom} ${libelle}`;
+
+						return `&lt;button type="button" class="btn text-primary p-0 d-inline-flex" on${eventApply}="event.stopPropagation();Query.speedAdd(${id}, '${tablesNames.join(';')}', '${tablesLibelle.join(';')}')" title="${title}">
+						&lt;i class="icon icon-actions-page-new ico-h2">&lt;/i>
+						&lt;/button>`;
+					}
+				}
+			}
+
+			return false;
+		},
+
+		/**
 		 *
 		 * @param {ValuesInforap} data
 		 * @param {String} tableName Nom de la table
@@ -3113,15 +3151,19 @@ var isigeoGUI = (function () {
 			if (isigeoGUI.draggableEvent != null) {
 				isigeoGUI.draggableEvent.destroy();
 			}
+			
 			const targetNode = document.querySelector('#agenda_events');
-			isigeoGUI.draggableEvent = new FullCalendar.Draggable(targetNode, {
-				itemSelector: '.draggable-el',
-				eventData: function (eventEl) {
-					return {
-						title: eventEl.innerText,
-					};
-				},
-			});
+
+			if (targetNode) {
+				isigeoGUI.draggableEvent = new FullCalendar.Draggable(targetNode, {
+					itemSelector: '.draggable-el',
+					eventData: function (eventEl) {
+						return {
+							title: eventEl.innerText
+						};
+					}
+				});
+			}
 		},
 
 		/**
@@ -3133,7 +3175,7 @@ var isigeoGUI = (function () {
 		 *
 		 * @ignore
 		 */
-		initPopoverDefault: function (resDefault, nbObj, selector, toggleOnly) {
+		initPopoverDefault: function (resDefault, nbObj, selector, toggleOnly,callbackFunction) {
 			var contentEmpty = '';
 			if (typeof selector == 'undefined') {
 				selector = '#restoredefault';
@@ -3185,6 +3227,10 @@ var isigeoGUI = (function () {
 					})
 					.popover('show')
 			);
+
+			if(typeof callbackFunction == "function"){
+				callbackFunction();
+			}
 		},
 
 		/**
@@ -3341,19 +3387,18 @@ var isigeoGUI = (function () {
 			}
 			// Boucle sur les id des thematics
 			for (let i = 0; i &lt; ids.length; i++) {
-				Thematic.activeLayer.push(options.layers[i].name);
 				// Commenté car oblige la théma à rester ON et empeche le retrait des objet de la carte à la fermeture de la dialog thématique
-				// if (typeof Viewer !== 'undefined' &amp;&amp; Viewer.layers &amp;&amp; options &amp;&amp; options.layers[0]) {
-				// 	const name = options.layers[i].name;
-				// 	const match = Viewer.layers.match(name);
+				if (typeof Viewer !== 'undefined' &amp;&amp; Viewer.layers &amp;&amp; options &amp;&amp; options.layers[0]) {
+					const name = options.layers[i].name;
+					const match = Viewer.layers.match(name);
 
-				// 	// Si on match et que c'est strictement égale au layer au sauvegarde l'état
-				// 	if (match &amp;&amp; name === match[i]) {
-				// 		Thematic.lastStatus[name] = 'ON';
-				// 	} else {
-				// 		Thematic.lastStatus[name] = 'OFF';
-				// 	}
-				// }
+					// on récupère l'etat de la thématique pour gérer l'affichage dans le layer tree
+					if (match &amp;&amp; name === match[i]) {
+						Thematic.lastStatus[name] = 'ON';
+					} else {
+						Thematic.lastStatus[name] = 'OFF';
+					}
+				}
 
 				const status = options &amp;&amp; options.layers ? options.layers[i].status : 'ON';
 				// dernier tour de boucle : on refresh la carte.
@@ -3714,22 +3759,6 @@ var isigeoGUI = (function () {
 					if (typeof myInitJson.maintenance != 'undefined' &amp;&amp; myInitJson.maintenance != '') {
 						_this.maintenance = myInitJson.maintenance;
 					}
-					// Gestion fichier de traduction plugin i18n de dataTable
-					_this.arrCodeLang = {
-						ru_RU: 'Russian',
-						es_ES: 'Spanish',
-						pl_PL: 'Polish',
-						eu_ES: 'Basque',
-						ja_JP: 'Japanese',
-						da_DK: 'Danish',
-						fr_FR: 'French',
-						pt_BR: 'Portuguese-Brasil',
-						ar_DZ: 'Arabic',
-						tr_TR: 'Turkish',
-						it_IT: 'Italian',
-						de_DE: 'German',
-						el_GR: 'Greek',
-					};
 					_this.matcadURL = myInitJson.matcadURL;
 
 					//Si on a le formulaire
@@ -3968,7 +3997,7 @@ var isigeoGUI = (function () {
 					isigeoGUI.initCKEDITOR();
 
 					if (myInitJson.activeTab === 'DATA' &amp;&amp; typeof layoutManager.isJSFileLoaded.data === 'undefined') {
-						layoutManager.loadJSFile('data', 0, isigeoGUI.js_files.isigeo_data.length, () => {
+						layoutManager.loadJSFile('data', () => {
 							onComplete(callbackInit);
 						});
 					} else {
@@ -4265,21 +4294,21 @@ var isigeoGUI = (function () {
 		 * @example
 		 *
 		 * isigeoGUI.printMap({
-		 *   launch: "launchIMP ou downloadFile (launchIMP par défaut)",
+		 *   launch: "downloadFile",
 		 *   optionImp: {
 		 *     scale: "1000",
-		 *     angle: "nombre compris entre 0 et 360 (0 par défaut)",
-		 *     format: "A4 à A0 pour l'instant (A4 par défaut)",
-		 *     orientation: "paysage ou portrait (paysage par défaut)",
+		 *     angle: 60,
+		 *     format: "A4",
+		 *     orientation: "paysage",
 		 *     title: "Titre pré conf",
 		 *     comment: "Observation pré conf",
-		 *     legendeimp: "true ou false (false par défaut)",
-		 *     legendeimppage: "true ou false (false par défaut)"
+		 *     legendeimp: true,
+		 *     legendeimppage: true
 		 *   },
 		 *   form: {
-		 *     tableId: "Identifiant de la table dans le catalogue de donnée IsiGéo ou nom de la table",
-		 *     id: "Identifiant de l’objet dans la table",
-		 *     pdfName: "PLANS / PLANS.pdf (si non renseigné : nom généré automatiquement)",
+		 *     tableId: "ec_poste",
+		 *     id: "65",
+		 *     pdfName: "monPDF",
 		 *     fieldFile: "pdf_plan"
 		 *   }
 		 * })
@@ -4412,7 +4441,7 @@ var isigeoGUI = (function () {
 		/**
 		 * Permet d'ouvrir un sidebar
 		 *
-		 * @param {String} divName Identifiant du sidebar
+		 * @param {String!} divName Identifiant du sidebar
 		 *
 		 * @example
 		 * // Liste des sidebar disponible
@@ -4455,13 +4484,11 @@ var isigeoGUI = (function () {
 		 * Fonction pour ouvrir un tableau de bord spécifique ou l'accueil si aucun tableau de bord n'est spécifié
 		 *
 		 * @param {(string|number)=} id id du tableau de bord (ouvre l'acceuil du TB si non renseigné)
-		 * @param {object=} options options
-		 * @param {object=} options.defaultValsFilter valeurs par défaut des filtres
-		 * @param {object=} options.valueToChange valeur du TB à modifier (cas ou on passe par un filtre strate)
+		 * @param {OpenTBOpts} options options
 		 *
-		 * @example isigeoGUI.openTB(1, {defaultValsFilter: {'id_type_tb': 1, 'id_type_tb_sous_type': 1}});
+		 * @example isigeoGUI.openTB(1, { type: 'graphSeul', defaultValsFilter: {'id_type_tb': 1, 'id_type_tb_sous_type': 1 }});
 		 */
-		openTB(id, options) {
+		openTB(id, options = {}) {
 			// Si on a pas d'id on ouvre le TB sur l'accueil
 			if (typeof id == 'undefined') {
 				// layoutManager.modalAlert('&lt;p class="mb-0 text-danger font-weight-bold">Veuillez renseigner l\'identifiant du tableau de bord.&lt;/p>');
@@ -4471,7 +4498,9 @@ var isigeoGUI = (function () {
 
 			const afterPanelOpen = function () {
 				if (typeof layoutManager.isJSGroupLoaded.tableau_bord != 'undefined' &amp;&amp; layoutManager.isJSGroupLoaded.tableau_bord) {
-					tableau_bordGUI.change(id, 'tabGraph', 'TABLEAU_BORD', options);
+					const type = options.type ? options.type : 'tabGraph';
+					
+					tableau_bordGUI.change(id, type, 'TABLEAU_BORD', options);
 				}
 			};
 
@@ -4488,7 +4517,7 @@ var isigeoGUI = (function () {
 		 * @externe Appelable depuis Isigeo_API
 		 *
 		 * @param {string!} table Nom de la table
-		 * @param {SearchOpts=} options Objet d'options
+		 * @param {SearchOpts=} [options={}] Objet d'options
 		 *
 		 * @example
 		 *
@@ -4624,6 +4653,10 @@ var isigeoGUI = (function () {
 
 						try {
 							var obj = JSON.parse(r);
+							if (typeof obj.status !== "undefined" &amp;&amp; obj.status == false) {
+								layoutManager.modalAlert(obj.message);
+								return;
+							}
 							if (exportCSV &amp;&amp; exportCSV != null) {
 								return isigeoGUI.exportCSVSelection(table, whereSQL, limit, exportPublipostage);
 							}
@@ -4817,21 +4850,54 @@ var isigeoGUI = (function () {
 						filterGUI.target = null;
 						filterGUI.dialog = null;
 					}
+					if (typeof Thematic != 'undefined') {
+						Thematic.FieldObs = []; 
+						Thematic.nbClassesMax = null;
+						Thematic.cpt = 0;
+						Thematic.cpton = 0;
+						Thematic.idActif = null;
+						Thematic.lastStatus = {};
+						Thematic.activeLayer = [];
+						Thematic.bsTableRef = {};
+					}
+
+					if (typeof LayerTree != 'undefined') {
+						LayerTree.imageBase = '.';
+						LayerTree.state = null;
+						LayerTree.cpt = 0;
+						LayerTree.LIMIT = 5;
+						LayerTree.group = {};
+						LayerTree.colorPicker = [];
+						LayerTree.options = {};
+						LayerTree.layer = {};
+						LayerTree.classLayer = {};
+						LayerTree.classVisibility = {};
+						LayerTree.classesDefaultStateAdded = {};
+						LayerTree.updateLayer_view = '';
+						LayerTree.footer = '';
+						LayerTree.updateLayerDialogs = {};
+						LayerTree.fullyLoaded = false;
+						LayerTree.getRequest = null;
+						LayerTree.layerState = {};
+					}
+
+					if (typeof Query != 'undefined') {
+						Query.enterEvent = false;
+					}
 
 					if (typeof isigeoGUI.refreshInterval != 'undefined' &amp;&amp; isigeoGUI.refreshInterval != null) {
 						clearInterval(isigeoGUI.refreshInterval);
 						isigeoGUI.refreshInterval = null;
 					}
-					// Si une autre dialog on la close aussi
-					if (layoutManager.dialog) {
-						layoutManager.dialog.close();
-					}
+					// On ferme toutes les dialogs ouvertes
+					layoutManager.closeAllWindows();
 
 					if (typeof Shortcut != 'undefined') {
 						Shortcut.buffer = [];
 					}
 					layoutManager.activeSidebar = null;
 					layoutManager.lastActiveSidebar = null;
+					isigeoGUI.inlineLocate = null;
 
 					//On vide la sélection
 					//Viewer.clearSelection();
@@ -4919,7 +4985,7 @@ var isigeoGUI = (function () {
 						};
 
 						if (typeof layoutManager.isJSGroupLoaded.viewer == 'undefined' || !layoutManager.isJSGroupLoaded.viewer) {
-							layoutManager.loadJSFile('viewer', 0, isigeoGUI.js_files.isigeo_viewer.length, function () {
+							layoutManager.loadJSFile('viewer',function () {
 								afterCheckJSLoaded(id);
 							});
 						} else {
@@ -4937,8 +5003,8 @@ var isigeoGUI = (function () {
 		 *
 		 * @param {String!} url Url à ouvrir
 		 * @param {String=} id id de la dialog
-		 * @param {String=} title Titre de la dialog
-		 * @param {Object=} options Objet d'options
+		 * @param {String=} [title="iFrame"] Titre de la dialog
+		 * @param {Object=} [options={}] Objet d'options
 		 * @param {string=} options.position position de la dialogue
 		 * @param {string=} options.affichage affichage de la dialogue (small, medium, large, fullscreen)
 		 *
@@ -5087,15 +5153,7 @@ var isigeoGUI = (function () {
 
 			return dialog;
 		},
-		// TODO: a supprimer après passage sur bootstrapTable
-		// Utile pour le plugins dataTables
-		getDataTablesTraductionFile() {
-			if (this.lang in this.arrCodeLang) {
-				return 'extras/dataTables/1.10.11/media/i18n/' + this.arrCodeLang[this.lang] + '.json';
-			}
 
-			return 'extras/dataTables/1.10.11/media/i18n/French.json';
-		},
 
 		initPictureGeoref(urlImage) {
 			if (typeof urlImage == 'undefined') {
@@ -5137,8 +5195,8 @@ var isigeoGUI = (function () {
 		/**
 		 * Fonction pour appliqué un état sur la carte
 		 *
-		 * @param {String} state Etat à appliqué ('QUERY', 'QUERYSHAPE', 'QUERYCIRCLE', 'QUERY_SEL', 'DRAW_POINT', 'DRAW_LINESTRING', 'DRAW_POLYGON', MODIFY', MEASURE_DISTANCE', 'MEASURE_SURFACE', 'MEASURE_OBJECT')
-		 * @param {Function} cb Callback une fois l'état appliqué
+		 * @param {String!} state Etat à appliqué ('QUERY', 'QUERYSHAPE', 'QUERYCIRCLE', 'QUERY_SEL', 'DRAW_POINT', 'DRAW_LINESTRING', 'DRAW_POLYGON', MODIFY', MEASURE_DISTANCE', 'MEASURE_SURFACE', 'MEASURE_OBJECT')
+		 * @param {Function=} cb Callback une fois l'état appliqué
 		 *
 		 * @example isigeoGUI.setToolBar('MODIFY', () => layoutManager.log('Vous pouvez modifier un objet sur la carte'));
 		 */
@@ -5155,7 +5213,8 @@ var isigeoGUI = (function () {
 		 */
 		insertLog(err, fnName) {
 			if (err instanceof Error === false) {
-				err = new Error();
+				const msg = err.message ? err.message : err;
+				err = new Error(msg);
 			}
 
 			const { filepath, line } = this.getInfosError(err);
@@ -5183,7 +5242,7 @@ var isigeoGUI = (function () {
 			if (typeof res.success !== 'undefined' &amp;&amp; res.success === true) {
 				console.log('Log enregistré');
 			} else {
-				console.error("Erreur lors de l'enregistrement du log : " + res.error);
+				console.error("Erreur lors de l'enregistrement du log : " + res.message);
 			}
 		},
 
@@ -5209,7 +5268,7 @@ var isigeoGUI = (function () {
 		 * Fonction qui va afficher une notification furtive
 		 * @tutorial tutoIsigeoLog
 		 *
-		 * @param {String!} message Message d'erreur
+		 * @param {String!} [message='Message'] Message d'erreur
 		 * @param {LogOpts=} options Objet d'options
 		 *
 		 * @returns {Object} retourne l'objet jQuery de l'élément
@@ -5237,7 +5296,13 @@ var isigeoGUI = (function () {
 		 * @param {Array&lt;Object>} options tableau d'objet
 		 * @param {String} options.name Nom du layer
 		 * @param {String} options.status Status du layer (ON/OFF)
-		 * @param {Boolean} refresh Si true, recharge la carte
+		 * @param {Boolean} [refresh=false] Si true, recharge la carte
+		 * 
+		 * @example
+		 * isigeoGUI.activeLayer([{
+		 *     name: 'support',
+		 *     status: 'ON',
+		 * }]);
 		 */
 		activeLayer(options, refresh) {
 			if (typeof Viewer !== 'undefined') {
@@ -5251,16 +5316,16 @@ var isigeoGUI = (function () {
 		 * Permet d'ouvrir la boite à outils pour l'import DXF avec les champs déjà renseigné
 		 *
 		 * @param {Object} options Objet d'option
-		 * @param {String} options.path Chemin du fichier dxf (à partir de mapserver_data\demo\data)
-		 * @param {Number=} options.type Type d'intégration (0: importer l'ensemble dans 3 tables, 1: importer chaque couche séparément)
-		 * @param {String} options.base Base de données
-		 * @param {String} options.table_point Table de destination pour les points
-		 * @param {String} options.table_line Table de destination pour les lignes
-		 * @param {String} options.table_polygon Table de destination pour les polygones
-		 * @param {String} options.projection Projection du fichier dxf (valeur ou identifiant)
-		 * @param {Boolean=} options.clear_tables Si true, supprime les tables de destination avant l'import
-		 * @param {Array&lt;String>} layers Liste des layers à importer
-		 * @param {String=} idunique Identifiant unique à ajouter (ex: "idunique_dxf=8")
+		 * @param {String} [options.path=''] Chemin du fichier dxf (à partir de mapserver_data\demo\data)
+		 * @param {Number=} [options.type=0] Type d'intégration (0: importer l'ensemble dans 3 tables, 1: importer chaque couche séparément)
+		 * @param {String} [options.base=''] Base de données
+		 * @param {String} [options.table_point=''] Table de destination pour les points
+		 * @param {String} [options.table_line=''] Table de destination pour les lignes
+		 * @param {String} [options.table_polygon=''] Table de destination pour les polygones
+		 * @param {String} [options.projection=''] Projection du fichier dxf (valeur ou identifiant)
+		 * @param {Boolean=} [options.clear_tables=false] Si true, supprime les tables de destination avant l'import
+		 * @param {Array&lt;String>} [layers=[]] Liste des layers à importer
+		 * @param {String=} [idunique=''] Identifiant unique à ajouter (ex: "idunique_dxf=8")
 		 */
 		integrateDXF(options = {}) {
 			const defaultOptions = {
@@ -5336,7 +5401,7 @@ var isigeoGUI = (function () {
 		 * Fonction pour changer d'application
 		 *
 		 * @param {String} mcd Nom de l'application
-		 * @param {String=} domain Nom du domaine : Récupère le domaine courant par défaut
+		 * @param {String=} [domain=Récupère le domaine courant] Nom du domaine
 		 *
 		 * @example isigeoGUI.changeApp('planning', 'demo');
 		 */
@@ -5485,7 +5550,7 @@ var isigeoGUI = (function () {
 		/**
 		 * Permet d'ouvrir un panel avec un sidebar spécifique
 		 * @param {String} divId Identifiant de la div de l'accordion à ouvrir ('shortcut1', 'layercontrol', 'localise', 'agenda', 'inforap', 'selection', 'impconf', 'cartes' )
-		 * @param {String} onglet Nom de l'onglet à ouvrir ('viewer','data', 'tableau_bord', 'alert', 'agenda')
+		 * @param {String=} [onglet=Récupère l'onglet correspondant] Nom de l'onglet à ouvrir ('viewer','data', 'tableau_bord', 'alert', 'agenda')
 		 * 
 		 * @example isigeoGUI.openAccordion('layercontrol', 'viewer');
 		 */
@@ -5560,6 +5625,209 @@ var isigeoGUI = (function () {
 			} else {
 				Viewer.exportPng();
 			}
+		},
+
+		/**
+		 * Permet l'export KML
+		 * 
+		 * @param {Array&lt;{table: string, filtre: string}>!} layers Tableau contenant les tables à exporter
+		 * @param {String} fileName Nom du fichier
+		 * 
+		 * @example
+		 * isigeoGUI.exportKml(
+		 *   [
+		 *     { table: "dispositif_last", filtre: "id_unique > 5" },
+		 *     { table: "incident", filtre: "id_incident > 10" },
+		 *   ],
+		 *   'test',
+		 * )
+		 */
+		exportKml(layers, fileName) {
+			this.modalExportKML = layoutManager.dialogConfirm("Attention, ce traitement peut prendre plusieurs minutes.", {
+				libelleForm: 'Export KML',
+				labelAccept: 'Continuer',
+				onAccept: () => {
+					const log = layoutManager.log('Export KML en cours...', {
+						useColorScheme: true,
+						type: 'info',
+						useTitle: false,
+						useCloseButton: false,
+					});
+
+					if (isigeoGUI.ar_exportKml &amp;&amp; isigeoGUI.ar_exportKml !== null) {
+						isigeoGUI.ar_exportKml.abort();
+					}
+				
+					let param = "cmd=exportKml";
+					if (typeof fileName != 'undefined') {
+						param += "&amp;output=" + fileName;
+					}
+				
+					if (typeof layers != 'undefined') {
+						param += "&amp;layers=" + JSON.stringify(layers);
+					}
+					
+					isigeoGUI.ar_exportKml = $jq.ajax({
+						url: "plugins/translate/lib/xhr_exportKml.php",
+						method: 'GET',
+						data: param,
+						success: (result) => {
+							log.toast('hide');
+							const part = checkAjaxStatus("~", result, this);
+							
+							if (!part) {
+								return false;
+							}
+							
+							if (part[0]!=="") {
+								alert(part[0]);
+							} else if (!part[1]) {
+								alert("Erreur lors de l'export du fichier KML. Assurez-vous d'avoir des objets.");
+							} else {
+								self.location.href = part[2];
+							}
+						},
+					});
+				}
+			});
+		},
+		 /* 
+		 * Function exportDoc
+		 * 
+		 * Export un un ou des documents IsiGéo
+		 * le champ destination permet de stocker le resultat dans une fiche isigéo
+		 * 
+		 * @param {Object} options 
+		 * 
+		 * options
+		 * {
+		 * 		layer : 'layername'
+		 * 		field : 'document',
+		 * 		id : ,
+		 * 		destination : 
+		 * 			{
+		 * 				layer
+		 * 				field
+		 * 				id			
+		 * 				filename
+		 * 				sendmail
+		 * 			}
+		 * 		
+		 * }
+		 * 
+		 */
+		exportDoc(options){
+			
+			let param='cmd=exportDoc&amp;options=' + JSON.stringify(options);
+			$jq.ajax({
+				url: 'lib/xhr_isigeo.php',
+				type: 'POST',
+				data: param,
+				success: function (r) {
+					try{
+						var result = JSON.parse(r);
+					}catch(e){
+						alertify.log('Erreur lors de l\'export de document.', 'error', 10000);
+						return false;
+					}
+
+					let message = '';
+
+					// Erreur lors de l'export :
+					if(typeof result.status =='undefined' || result.status ==false){
+						message = 'Erreur lors de l\'export de document. ';
+						if(typeof result.message != 'undefined') message += result.message;
+						alertify.log(message, 'error', 10000);
+						return false;
+					}
+
+					// En cas de succès.
+					message = 'Export en cours.. ';
+					if(typeof result.message != 'undefined' &amp;&amp; result.message !=''){
+						message = result.message; 
+					}
+					alertify.log(message);
+				},
+				error: function(){
+					
+				}
+			});
+		},
+
+		/**
+		 * 
+		 * Function mergeFic
+		 * 
+		 * Concatene plusieurs champs de type fic dans une archive ZIP 
+		 * Le champ destionation permet de socker le resultat dans un champ fic
+		 * 
+		 * @param {object} options 
+		 * 
+		 * options
+		 * {
+		 * 		layer : 'layername'
+		 * 		field : 'fic',
+		 * 		filter : "code_insee = '64100'",
+		 * 		destination : 
+		 * 			{
+		 * 				layer
+		 * 				field
+		 * 				id			
+		 * 				filename
+		 * 			}
+		 * 		
+		 * }
+		 * 
+		 */
+
+		mergeFic(options){
+			
+			var opt = null; 
+			try{
+				opt = JSON.stringify(options)
+			}catch(e){
+				alertify.log("Concatenation des fichiers : erreur lors de la lecture des options", 'error', 10000);
+				return false;
+			}
+
+			let param = 'cmd=mergeFic&amp;options='+opt;
+			
+			$jq.ajax({
+				url: 'lib/xhr_isigeo.php',
+				type: 'POST',
+				data: param,
+				success: function (r) {
+					try{
+						var result = JSON.parse(r);
+					}catch(e){
+						alertify.log('Erreur lors de la concaténation des fichiers.', 'error', 10000);
+						return false;
+					}
+
+					let message = '';
+
+					// Erreur lors de l'export :
+					if(typeof result.status =='undefined' || result.status ==false){
+						message = 'Erreur lors de la concaténation des fichiers. ';
+						if(typeof result.message != 'undefined') message += result.message;
+						alertify.log(message, 'error', 10000);
+						return false;
+					}
+
+					// En cas de succès.
+
+					message = '';
+					if(typeof result.message != 'undefined' &amp;&amp; result.message !=''){
+						message = result.message; 
+					}
+					if(message !=''){
+						alertify.log(message,'success');
+					}
+				},
+				error: function(){
+					
+				}
+			})
 		}
 	};
 })();
@@ -5649,4 +5917,4 @@ function addGPSObject() {
 		},
 	});
 }
-</code></pre></article></section><footer class="footer" id="PeOAagUepe"><div class="wrapper"><div style="margin-bottom:.5rem">clean-jsdoc-theme</div>Fork: <a href="https://github.com/ankitskvmdam/clean-jsdoc-theme">https://github.com/ankitskvmdam/clean-jsdoc-theme</a></div></footer></div></div></div><div class="search-container" id="PkfLWpAbet" style="display:none"><div class="wrapper" id="iCxFxjkHbP"><button class="icon-button search-close-button" id="VjLlGakifb" aria-label="close search"><svg><use xlink:href="#close-icon"></use></svg></button><div class="search-box-c"><svg><use xlink:href="#search-icon"></use></svg> <input type="text" id="vpcKVYIppa" class="search-input" placeholder="Search..." autofocus></div><div class="search-result-c" id="fWwVHRuDuN"><span class="search-result-c-text">Type anything to view search result</span></div></div></div><div class="mobile-menu-icon-container"><button class="icon-button" id="mobile-menu" data-isopen="false" aria-label="menu"><svg><use xlink:href="#menu-icon"></use></svg></button></div><div id="mobile-sidebar" class="mobile-sidebar-container"><div class="mobile-sidebar-wrapper"><a href="/" class="sidebar-title sidebar-title-anchor">clean-jsdoc-theme</a><div class="mobile-nav-links"></div><div class="mobile-sidebar-items-c"><div class="sidebar-section-title with-arrow" data-isopen="false" id="c6r7nOiyMCZkypA1nXiMt"><div>Tutorials</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="tutorial-tutoIsigeoLog.html">Utilisation de la fonction isigeoGUI.log</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="Wl3itluFbZox5iSd65Tan"><div>Global</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="global.html#activeLayer">activeLayer</a></div><div class="sidebar-section-children"><a href="global.html#addForm">addForm</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#addLayer">addLayer</a></div><div class="sidebar-section-children"><a href="global.html#addLinked">addLinked</a></div><div class="sidebar-section-children"><a href="global.html#changeApp">changeApp</a></div><div class="sidebar-section-children"><a href="global.html#changeMap">changeMap</a></div><div class="sidebar-section-children"><a href="global.html#exportCSVSelection">exportCSVSelection</a></div><div class="sidebar-section-children"><a href="global.html#exportPng">exportPng</a></div><div class="sidebar-section-children"><a href="global.html#getStrate">getStrate</a></div><div class="sidebar-section-children"><a href="global.html#integrateDXF">integrateDXF</a></div><div class="sidebar-section-children"><a href="global.html#isigeoGUI">isigeoGUI</a></div><div class="sidebar-section-children"><a href="global.html#launchExportSIG">launchExportSIG</a></div><div class="sidebar-section-children"><a href="global.html#launchPHP">launchPHP</a></div><div class="sidebar-section-children"><a href="global.html#launchSQL">launchSQL</a></div><div class="sidebar-section-children"><a href="global.html#log">log</a></div><div class="sidebar-section-children"><a href="global.html#modalAlert">modalAlert</a></div><div class="sidebar-section-children"><a href="global.html#openAccordion">openAccordion</a></div><div class="sidebar-section-children"><a href="global.html#openForm">openForm</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#openIframeDialog">openIframeDialog</a></div><div class="sidebar-section-children"><a href="global.html#openLegend">openLegend</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#openPanel">openPanel</a></div><div class="sidebar-section-children"><a href="global.html#openTB">openTB</a></div><div class="sidebar-section-children"><a href="global.html#printMap">printMap</a></div><div class="sidebar-section-children"><a href="global.html#removeLayer">removeLayer</a></div><div class="sidebar-section-children"><a href="global.html#saveMapAsImg">saveMapAsImg</a></div><div class="sidebar-section-children"><a href="global.html#search">search</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#setToolBar">setToolBar</a></div></div></div><div class="mobile-navbar-actions"><div class="navbar-right-item"><button class="icon-button search-button" aria-label="open-search"><svg><use xlink:href="#search-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#dark-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div></div></div><script type="text/javascript" src="scripts/core.min.js"></script><script src="scripts/search.min.js" defer="defer"></script><script src="scripts/third-party/fuse.js" defer="defer"></script><script type="text/javascript">var tocbotInstance=tocbot.init({tocSelector:"#eed4d2a0bfd64539bb9df78095dec881",contentSelector:".main-content",headingSelector:"h1, h2, h3",hasInnerContainers:!0,scrollContainer:".main-content",headingsOffset:130,onClick:bringLinkToView})</script></body></html>
+</code></pre></article></section><footer class="footer" id="PeOAagUepe"><div class="wrapper"><div style="margin-bottom:.5rem">clean-jsdoc-theme</div>Fork: <a href="https://github.com/ankitskvmdam/clean-jsdoc-theme">https://github.com/ankitskvmdam/clean-jsdoc-theme</a></div></footer></div></div></div><div class="search-container" id="PkfLWpAbet" style="display:none"><div class="wrapper" id="iCxFxjkHbP"><button class="icon-button search-close-button" id="VjLlGakifb" aria-label="close search"><svg><use xlink:href="#close-icon"></use></svg></button><div class="search-box-c"><svg><use xlink:href="#search-icon"></use></svg> <input type="text" id="vpcKVYIppa" class="search-input" placeholder="Search..." autofocus></div><div class="search-result-c" id="fWwVHRuDuN"><span class="search-result-c-text">Type anything to view search result</span></div></div></div><div class="mobile-menu-icon-container"><button class="icon-button" id="mobile-menu" data-isopen="false" aria-label="menu"><svg><use xlink:href="#menu-icon"></use></svg></button></div><div id="mobile-sidebar" class="mobile-sidebar-container"><div class="mobile-sidebar-wrapper"><a href="/" class="sidebar-title sidebar-title-anchor">clean-jsdoc-theme</a><div class="mobile-nav-links"></div><div class="mobile-sidebar-items-c"><div class="sidebar-section-title with-arrow" data-isopen="false" id="HymaDaN_pLTd_dbdcap0M"><div>Tutorials</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="tutorial-tutoIsigeoLog.html">Utilisation de la fonction isigeoGUI.log</a></div></div><div class="sidebar-section-title with-arrow" data-isopen="false" id="iG1zGYyysm5Sd8oINSJwu"><div>Global</div><svg><use xlink:href="#down-icon"></use></svg></div><div class="sidebar-section-children-container"><div class="sidebar-section-children"><a href="global.html#activeLayer">activeLayer</a></div><div class="sidebar-section-children"><a href="global.html#addForm">addForm</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#addLayer">addLayer</a></div><div class="sidebar-section-children"><a href="global.html#addLinked">addLinked</a></div><div class="sidebar-section-children"><a href="global.html#changeApp">changeApp</a></div><div class="sidebar-section-children"><a href="global.html#changeMap">changeMap</a></div><div class="sidebar-section-children"><a href="global.html#exportCSVSelection">exportCSVSelection</a></div><div class="sidebar-section-children"><a href="global.html#exportKml">exportKml</a></div><div class="sidebar-section-children"><a href="global.html#exportPng">exportPng</a></div><div class="sidebar-section-children"><a href="global.html#getStrate">getStrate</a></div><div class="sidebar-section-children"><a href="global.html#integrateDXF">integrateDXF</a></div><div class="sidebar-section-children"><a href="global.html#isigeoGUI">isigeoGUI</a></div><div class="sidebar-section-children"><a href="global.html#launchExportSIG">launchExportSIG</a></div><div class="sidebar-section-children"><a href="global.html#launchPHP">launchPHP</a></div><div class="sidebar-section-children"><a href="global.html#launchSQL">launchSQL</a></div><div class="sidebar-section-children"><a href="global.html#log">log</a></div><div class="sidebar-section-children"><a href="global.html#mergeFic">mergeFic</a></div><div class="sidebar-section-children"><a href="global.html#modalAlert">modalAlert</a></div><div class="sidebar-section-children"><a href="global.html#openAccordion">openAccordion</a></div><div class="sidebar-section-children"><a href="global.html#openForm">openForm</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#openIframeDialog">openIframeDialog</a></div><div class="sidebar-section-children"><a href="global.html#openLegend">openLegend</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#openPanel">openPanel</a></div><div class="sidebar-section-children"><a href="global.html#openTB">openTB</a></div><div class="sidebar-section-children"><a href="global.html#printMap">printMap</a></div><div class="sidebar-section-children"><a href="global.html#removeLayer">removeLayer</a></div><div class="sidebar-section-children"><a href="global.html#saveMapAsImg">saveMapAsImg</a></div><div class="sidebar-section-children"><a href="global.html#search">search</a> <code class="sidebar-section-children-tag">externe</code></div><div class="sidebar-section-children"><a href="global.html#setToolBar">setToolBar</a></div></div></div><div class="mobile-navbar-actions"><div class="navbar-right-item"><button class="icon-button search-button" aria-label="open-search"><svg><use xlink:href="#search-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button theme-toggle" aria-label="toggle-theme"><svg><use class="theme-svg-use" xlink:href="#dark-theme-icon"></use></svg></button></div><div class="navbar-right-item"><button class="icon-button font-size" aria-label="change-font-size"><svg><use xlink:href="#font-size-icon"></use></svg></button></div></div></div></div><script type="text/javascript" src="scripts/core.min.js"></script><script src="scripts/search.min.js" defer="defer"></script><script src="scripts/third-party/fuse.js" defer="defer"></script><script type="text/javascript">var tocbotInstance=tocbot.init({tocSelector:"#eed4d2a0bfd64539bb9df78095dec881",contentSelector:".main-content",headingSelector:"h1, h2, h3",hasInnerContainers:!0,scrollContainer:".main-content",headingsOffset:130,onClick:bringLinkToView})</script></body></html>
