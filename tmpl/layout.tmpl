@@ -61,7 +61,7 @@
     <script src="scripts/third-party/tocbot.min.js"></script>
 
     <script>
-      var baseURL = "/"
+      var baseURL = "/index.html"
       var locationPathname = ""
 
       // Global variables
@@ -71,7 +71,7 @@
         baseURL = baseURL.substr(baseURL.indexOf("/"))
       <?js } else { ?>
         locationPathname = document.location.pathname
-        baseURL = locationPathname.substr(0, locationPathname.lastIndexOf("/") + 1)
+        baseURL = locationPathname.substr(0, locationPathname.lastIndexOf("/") + 1) + "index.html"
       <?js } ?>
 
     </script>
